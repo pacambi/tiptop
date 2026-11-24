@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tip Top — Privacy</title>
+  <style>
+    :root { color-scheme: light dark; font: 17px/1.6 system-ui, sans-serif; }
+    body { max-width: 44rem; margin: auto; padding: 24px; }
+    h1 { font-size: 1.7rem; } h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+  </style>
+</head>
+<body>
+  <h1>Tip Top privacy policy</h1>
+  <p>Effective 24 November 2026 · Beta version 0.1.0</p>
+  <p>Tip Top, shown as Tourenplan Exporter in early beta builds, is an independent Safari extension for exporting your own Tourenplan schedule. Live exports require an existing authorized SBB account; fictional demo exports do not. The extension does not create an account or ask you to enter your password into the extension.</p>
+  <h2>Authentication</h2>
+  <p>When you use Tourenplan in Safari with the extension enabled, the extension observes approved authentication headers used by that website. It saves these headers and their capture time in browser-local extension storage. It uses them only for authenticated requests to the Tourenplan monthly schedule and daily detail APIs over HTTPS.</p>
+  <p>Saved headers expire for API use 30 minutes after the most recent capture. Expired headers are deleted on the next status check or export. They are also deleted when you choose Clear saved login, an API request returns an authentication refusal, or the extension is installed or updated. Expiry does not run a background deletion timer. The website can supply fresh headers on later requests; clearing the extension's saved login does not sign you out of SBB.</p>
+  <h2>Schedule and export files</h2>
+  <p>Try demo uses entirely fictional schedules generated on your device. It does not use saved login headers or send schedule requests to SBB. Demo export filenames include DEMO, and demo JSON identifies its synthetic source. The same local export and activity-summary functions are used for demo and live data.</p>
+  <p>Retrieved schedule data is processed in the extension panel's memory to produce JSON, CSV, and activity summaries. Closing that panel discards its in-memory export. A file you choose to save or share can contain personal work dates, locations, identifiers, activities, and remarks. Files remain wherever you save or share them until you delete them there.</p>
+  <p>The app does not upload your credentials or exports to a developer-operated server. It contains no advertising, tracking, analytics SDK, or developer-operated crash-reporting service.</p>
+  <h2>Other services</h2>
+  <p>Requests go directly to SBB's services. SBB controls its own authentication, server logs, and data handling; this policy does not describe or change those practices. If you save to a cloud drive or share through another app, that service's policies apply. Apple may process TestFlight diagnostics and feedback under its own terms.</p>
+  <h2>Your choices</h2>
+  <p>You can clear saved login headers in the extension, revoke Safari website access, disable or uninstall the extension, and delete exported files from their saved locations. The extension cannot delete files or messages you have already shared with another service.</p>
+  <h2>This website</h2>
+  <p>The public information pages are hosted on GitHub Pages. The pages contain no analytics scripts, forms, or advertising. The hosting provider may process connection information to serve them; its own privacy policy applies to that processing.</p>
+  <h2>Contact and changes</h2>
+  <p>Contact the developer at <a href="mailto:pa@cambi.ch">pa@cambi.ch</a>, or use Send Beta Feedback in TestFlight. Do not include authentication headers, passwords, or unredacted personal schedules in feedback.</p>
+  <p>This policy will be updated if the app's data handling changes. The effective date above identifies this version.</p>
+</body>
+</html>
